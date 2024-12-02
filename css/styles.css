@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+
+body {
+    background-color: antiquewhite;
+    color: #333;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1em;
+    text-decoration: none;
+    color: rgb(107, 36, 36);
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: rgb(107, 36, 36);
+    color: white;
+    border-radius: 5px;
+}
+
+nav .logo {
+    max-width: 100px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.img {
+    flex: 2; /*Imagen toma menos espacio */
+    text-align: center;
+}
+
+.img img {
+    width: 100%;
+    max-width: 300px;
+    border: 5px solid rgb(97, 41, 41);
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 3; /* Contenedor de texto ocupa más espacio */
+    text-align: left;
+}
+
+.text-container h1 {
+    font-size: 2.5em;
+    color: rgb(107, 36, 36);
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text-container .btn {
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: rgb(66, 43, 87);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.text-container .btn:hover {
+    background-color: rgb(107, 36, 36);
+}
+
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.img {
+    flex: 2;
+    text-align: right;
+}
+
+.boxes .img img {
+    width: 100%;
+    max-width: 500px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.text {
+    flex: 2; /* Contenedor de texto ocupa más espacio */
+    text-align: right;
+}
+
+.text h1 {
+    font-size: 1.5em;
+    color: rgb(107, 36, 36);
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(107, 36, 36);
+    margin-bottom: 30px;
+}
+
+/* Container for the cards */
+.Recetas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cartas se ajusten en varias filas */
+    justify-content: space-around;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Individual card styling */
+.caja {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho fijo para las cartas */
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.caja img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+}
+
+/* Title inside the card */
+.caja h1 {
+    font-size: 1.5em;
+    color: rgb(107, 36, 36);
+    margin-bottom: 10px;
+}
+
+/* Paragraph inside the card */
+.caja p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button inside the card */
+.caja a {
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(66, 43, 87);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.caja a:hover {
+    background-color: rgb(107, 36, 36);
+}
+
+/* Container for products */
+.productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se ajusten en varias filas */
+    justify-content: space-around;
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 50px ;
+}
+
+/* Individual product styling */
+.producto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho fijo para los productos */
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Title inside the product */
+.producto h1 {
+    font-size: 1.5em;
+    color: rgb(107, 36, 36);
+    margin-bottom: 10px;
+}
+
+/* Paragraph inside the product */
+.producto p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    background-color: rgb(66, 43, 87);
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Contenedor principal del footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las secciones se ajusten */
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Secciones individuales */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Títulos de secciones */
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffd700; /* Amarillo dorado */
+}
+
+/* Texto de contacto */
+.footer-section p {
+    margin: 5px 0;
+}
+
+/* Redes sociales */
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Pie de página inferior */
+.footer-bottom {
+    background-color: #4a2e5a;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #ccc;
+}
+/* Botón de menú responsive */
+.menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(107, 36, 36);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        width: 200px;
+        text-align: right;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    /* Mostrar menú cuando el checkbox está activado */
+    .menu-toggle:checked + .menu-btn + .menu {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+
+/* Responsividad y mejora para el main-content */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Cambia a diseño en columnas */
+        align-items: center; /* Centra los elementos */
+        text-align: center; /* Centra el texto */
+        gap: 30px; /* Espaciado entre elementos */
+        background: linear-gradient(to bottom, #ffd700, #f8e4d9); /* Fondo atractivo */
+        padding: 20px;
+        border-radius: 15px; /* Bordes redondeados */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    }
+
+    .main-content .img img {
+        max-width: 100%; /* Asegura que las imágenes no excedan el ancho */
+        height: auto; /* Mantiene la proporción */
+        border: 5px solid #8b5e34; /* Marco atractivo para la imagen */
+        border-radius: 10px; /* Bordes redondeados */
+    }
+
+    .text-container {
+        width: 90%; /* Ajusta el ancho para dispositivos pequeños */
+        animation: fadeIn 1.5s ease; /* Animación de entrada */
+    }
+
+    .text-container h1 {
+        font-size: 2em; /* Título más grande y destacado */
+        color: #8b5e34; /* Color cálido */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para el texto */
+    }
+
+    .text-container p {
+        font-size: 1.1em; /* Texto más grande y legible */
+        line-height: 1.8; /* Espaciado más amplio */
+        color: #6d4e2f; /* Tono cálido y suave */
+    }
+
+    .text-container .btn {
+        font-size: 1em; /* Tamaño atractivo del botón */
+        padding: 12px 25px;
+        background: #8b5e34; /* Color cálido */
+        color: white;
+        border: none;
+        border-radius: 30px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra para el texto del botón */
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .text-container .btn:hover {
+        background: #b87446; /* Color más claro al pasar el cursor */
+        transform: scale(1.05); /* Efecto de crecimiento */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        gap: 20px; /* Reduce el espacio entre elementos */
+        padding: 15px;
+    }
+
+    .text-container h1 {
+        font-size: 1.7em; /* Reduce un poco el tamaño del título */
+    }
+
+    .text-container p {
+        font-size: 1em; /* Ajusta el tamaño del texto */
+        line-height: 1.6; /* Espaciado cómodo */
+    }
+
+    .text-container .btn {
+        font-size: 0.9em; /* Botón más compacto */
+        padding: 10px 20px;
+    }
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Responsividad para Productos, Misión y Recetas */
+@media (max-width: 768px) {
+    /* Ajustes para la sección de productos */
+    .productos {
+        flex-direction: column; /* Cambia a diseño en columnas */
+        align-items: center; /* Centra los elementos */
+        gap: 30px;
+    }
+
+    .producto {
+        width: 90%; /* Ajusta el ancho para dispositivos pequeños */
+    }
+
+    /* Ajustes para la sección de misión */
+    .boxes {
+        flex-direction: column; /* Cambia a diseño en columnas */
+        align-items: center; /* Centra los elementos */
+        gap: 30px;
+    }
+
+    .boxes .img img {
+        max-width: 100%; /* Ajusta el tamaño de las imágenes */
+    }
+
+    .text {
+        text-align: center; /* Centra el texto */
+    }
+
+    /* Ajustes para la sección de recetas */
+    .Recetas {
+        flex-direction: column; /* Cambia a diseño en columnas */
+        align-items: center; /* Centra los elementos */
+        gap: 30px;
+    }
+
+    .caja {
+        width: 90%; /* Ajusta el ancho para dispositivos pequeños */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes más específicos para pantallas muy pequeñas */
+    .productos, .boxes, .Recetas {
+        gap: 20px; /* Reduce la separación entre elementos */
+    }
+
+    .producto, .caja {
+        width: 95%; /* Ancho casi completo */
+    }
+
+    .text-container h1, 
+    .text h1, 
+    .caja h1, 
+    .producto h1 {
+        font-size: 1.2em; /* Ajusta el tamaño de los títulos */
+    }
+
+    .text-container p,
+    .text p,
+    .caja p,
+    .producto p {
+        font-size: 0.9em; /* Ajusta el tamaño del texto */
+    }
+
+    .text-container .btn,
+    .caja a {
+        font-size: 0.9em; /* Botones más pequeños */
+        padding: 8px 16px;
+    }
+}
+
+/* Estilos generales para el formulario */
+#contacto {
+    background: linear-gradient(to bottom, #ffd700, #f8e4d9); /* Fondo degradado */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+#contacto h2 {
+    font-size: 2.5em;
+    color: #8b5e34;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para el texto */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #6d4e2f;
+    margin-bottom: 8px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid #8b5e34;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #b87446; /* Color más claro al enfoque */
+    box-shadow: 0 0 8px rgba(184, 116, 70, 0.4); /* Efecto brillante */
+}
+
+.contact-form textarea {
+    resize: none; /* Desactiva el redimensionado */
+}
+
+.contact-form .btn-submit {
+    font-size: 1.2em;
+    padding: 12px 25px;
+    background-color: #8b5e34;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #b87446;
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 768px) {
+    #contacto {
+        padding: 20px 15px;
+    }
+
+    #contacto h2 {
+        font-size: 2em;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        font-size: 1em;
+    }
+
+    .contact-form .btn-submit {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}

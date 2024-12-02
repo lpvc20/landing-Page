@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallina Feliz</title>
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Logo -->
+            <img src="img\logo.png" alt="Logo" class="logo">
+
+            <!-- Checkbox oculto -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Botón del menú -->
+            <label for="menu-toggle" class="menu-btn">
+                ☰
+            </label>
+
+            <!-- Menú de navegación -->
+            <ul class="menu">
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#contacto">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="img">
+            <img src="img\img1.jpg" alt="Eggs">
+        </div>
+        <div class="text-container">
+            <h1>Pasture Raised Eggs</h1>
+            <p>Todas las nuestras gallinas tienen acceso a pasturas orgánicas, donde pasan sus días cacareando,
+                pavoneándose y picoteando insectos y lombrices. En los días lluviosos, las gallinas se quedan en el
+                gallinero, pero mantenerlas felices y saludables es nuestra máxima prioridad.</p>
+            <a href="#us" class="btn">Conoce más</a>
+        </div>
+    </div>
+    <section id="products">
+    <h2>Nuestros Productos</h2>
+
+    <div class="productos">
+        <div class="producto">
+            <img src="img\pack.png" alt="Huevos medianos">
+            <h1>Huevos Medianos</h1>
+            <p>Perfectos para recetas clásicas, con un tamaño ideal y una calidad inigualable.</p>
+        </div>
+        <div class="producto">
+            <img src="img\pack.png" alt="Huevos grandes">
+            <h1>Huevos Grandes</h1>
+            <p>Ideales para quienes buscan mayor saciedad y sabor en cada bocado.</p>
+        </div>
+    </div>
+</section>
+<section id="us">
+    <h2>Nuestra misión</h2>
+
+    <div class="boxes">
+        <div class="img">
+            <img src="img\us.jpg" alt="Gallinas">
+        </div>
+        <div class="text">
+            <h1>Mantenemos a nuestros animales sanos trabajando en armonía con la naturaleza.</h1>
+            <p>Al igual que usted no quiere que sus hijos o usted mismo estén constantemente expuestos a antibióticos,
+                nosotros tampoco queremos que nuestros animales lo estén. En cambio, nuestros agricultores utilizan
+                medidas holísticas naturales para tratar a los animales en la producción orgánica. Sin embargo, si un
+                animal alguna vez se enferma, nuestros agricultores le administran medicamentos y el animal es retirado
+                permanentemente del rebaño.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="recetas">
+        <h2>Recetas</h2>
+         <div class="boxes">
+            <div class="caja">
+                <img src="img\espon.jpg" alt="Gallinas">
+                <h1>Huevos revueltos esponjosos</h1>
+                <p>Con esta forma de prepararlos te quedarán ligeros, esponjosos, húmedos y deliciosos!</p>
+                <a href="https://www.kitchenaid.es/recetas/huevos-revueltos-esponjosos" target="_blank">Obtener receta</a>
+            </div>
+            <div class="caja">
+                <img src="img\ome.jpg" alt="Gallinas">
+                <h1>Omelette de verduras</h1>
+                <p>Preparado con ingredientes frescos y saludables para un desayuno lleno de energía.</p>
+                <a href="https://www.mundodeportivo.com/uncomo/comida/receta/como-hacer-un-omelette-de-huevo-31728.html" target="_blank">Obtener receta</a>
+            </div>
+            <div class="caja">
+                <img src="img\mexi.jpg" alt="Gallinas">
+                <h1>Huevos a la mexicana</h1>
+                <p>Una receta clásica con un toque picante, perfecta para comenzar el día.</p>
+                <a href="https://patijinich.com/es/huevos-a-la-mexicana-al-estilo-papi/" target="_blank">Obtener receta</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..."
+                    required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <div class="footer-container" id="contact">
+            <!-- Información de contacto -->
+            <div class="footer-section contact-info">
+                <h3>Contacto</h3>
+                <p><strong>Teléfono:</strong> +591 77684412</p>
+                <p><strong>Email:</strong> contacto@huevosfelices.com</p>
+                <p><strong>Horario:</strong> Lunes a Viernes, 9 AM - 5 PM</p>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer-section social-media">
+                <h3>Síguenos</h3>
+                <a href="https://www.facebook.com/"><img src="img\face.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="img\insta.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/"><img src="img\youtube.png" alt="YouTube"></a>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="footer-section location">
+                <h3>Ubicación</h3>
+                <p>Calle Falsa 123, Ciudad Huevina</p>
+                <p>CP 45678, País Gallinero</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Huevos Felices | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
